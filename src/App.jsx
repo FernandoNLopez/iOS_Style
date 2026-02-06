@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Navbar, Welcome } from './components'
-
+import { Navbar, Welcome, Dock } from './components';
 
 
 const App = () => {
@@ -9,7 +8,8 @@ const App = () => {
         <main className="">
             <Navbar />
             <Welcome />
+            <Dock />
         </main>
     )
-}
-export default App
+};
+export default App;

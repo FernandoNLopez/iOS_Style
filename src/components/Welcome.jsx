@@ -25,8 +25,8 @@ const FONT_WEIGHTS = {
 };
 
 const setupTextHover = (container, type) => {
-
-    if (!container) return;
+    /* If the container isn´t available return a no-op cleanup so callers can safely invoke it during effect cleanup. */
+    if (!container) return () => {};
 
     const letters = container.querySelectorAll("span");
     const { min, max, default: base } = FONT_WEIGHTS[type];                 //destructuring FONT_WEIGHTS for each specific type

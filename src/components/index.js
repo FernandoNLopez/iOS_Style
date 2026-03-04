@@ -7,5 +7,5 @@ export {
     Navbar,
     Welcome,
     Dock,
-    WindowControls
+    WindowControls,
 }
